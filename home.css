@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    background: #0B0B09;
+    overflow-x: hidden;
+}
+table{
+  width: 100%;
+}
+td{
+  padding: 20px;
+  vertical-align: top;
+}
+#header-logo{
+    background-image: url(./IMGS/takeryan_logo_clean.png);
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+header nav ul li{
+    background: #797972;
+    padding: 1%;
+    list-style: none;
+    overflow: hidden;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: #797972;
+    overflow: hidden;
+}
+header nav a{
+    font-size: 200%;
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+header a:hover{
+    background: white;
+    color: #797972;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    scale: 1.05;
+}
+header li:hover{
+    background: white;
+    color: #797972;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    scale: 1.05;
+}
+header li:hover a{
+    background: white;
+    color: #797972;
+    overflow: hidden;
+}
+table{
+    position: relative;
+    overflow: hidden;
+}
+
+.title-table{
+    border: 10px solid white;
+    text-align: center;
+    font-family: arial;
+    overflow: hidden;
+    background-color: rgb(174, 174, 174); 
+    border-color: rgb(114, 114, 114);
+    font-size: 1.5em;
+    padding: 20px 0;
+    text-align: center;
+}
+table tr td{
+    text-align: center;
+    vertical-align: top;
+    padding: 20px;
+    width: 25%;
+}
+table tr td img.tamanho-imgs{
+    max-width: 200px; /* ou o tamanho ideal das suas imagens */
+    display: block;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 auto 10px auto;
+    transition: 0.3s ease-in-out;
+}
+table tr td img:hover{
+  scale: 1.05;
+}
+table tr td p:hover{
+  transition: 0.3s ease-in-out;
+  scale: 1.05;
+}
+table tr td p.nome-data-movie{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    width: auto;
+    max-width: 80%;
+    text-align: center;
+    margin: 15px auto 15px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+table a{
+    text-decoration: none;
+    overflow: hidden;
+}
+table tr td a.link-mdb{
+    text-decoration: none;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 80%;
+    margin: auto;
+    text-align: center;
+    margin-left: 10%;
+    overflow: hidden;
+    display: block;
+    color: #ccc;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+footer{
+    text-align: center;
+    width: 100%;
+    color: white;
+    padding: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 5% 0 5% 0;
+    line-height: 200%;
+    overflow: hidden;
+}
+.saiba-mais{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-family: arial;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+ul.box-redes-sociais {
+    display: flex;
+    background: transparent;
+    width: 305px;
+    float: none;
+    margin: auto;
+  
+  }
+  
+  ul.box-redes-sociais li {
+    list-style: none;
+    margin: auto;
+  }
+  
+  
+  ul.box-redes-sociais li a {
+    
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 45px;
+    font-size: 22px;
+    margin: 0 5px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #eaeaea;
+    z-index: 1;
+  }
+  ul.box-redes-sociais li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .3s;
+    z-index: 3;
+  }
+  
+  ul.box-redes-sociais li a:hover .icon {
+    color: #fff;
+    scale:1.2; /*quando passar por cima do icone aumenta a font*/
+  }
+  
+  ul.box-redes-sociais li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.4s;
+    z-index: 2;
+  }
+  
+  ul.box-redes-sociais li a:hover:before {
+    top: 0;
+  }
+  
+  ul.box-redes-sociais li.facebook a:before{
+    background: #3b5999;
+  }
+  
+  ul.box-redes-sociais li.instagram a:before{
+    background:hsl(0 0% 10%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  }
+  
+  ul.box-redes-sociais li.twitter a:before{
+    background: #55acee;
+  }
+  
+  ul.box-redes-sociais li.youtube a:before {
+    background: #ff1d15;
+  }
+  ul.box-redes-sociais li.snapchat a:before{
+    background: rgb(255, 252, 0);
+  }
+  ul.box-redes-sociais li.snapchat a:hover .icon{
+      color: #0B0B09;
+  }
+  ul.box-redes-sociais li.github a:before{
+    background-color: black;
+  }
+  ul.box-redes-sociais li.github a:hover .icon{
+    color: white;
+  }
+  header nav ul li#saida:hover a{
+    background-color: red;
+    color: black;
+  }
+  header nav ul li#saida:hover{
+    background-color: red;
+  }
