@@ -253,3 +253,57 @@ ul.box-redes-sociais {
   header nav ul li#saida:hover{
     background-color: red;
   }
+
+  @media only screen and (max-width:600px){
+    header nav ul{
+      flex-wrap: wrap;
+      flex-direction: column;
+      text-align: center;
+    }
+    tr{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    table img{
+      margin: auto;
+      display: flex;
+    }
+  }
+  @media only screen and (min-width:600px){
+    header nav ul{
+      flex-wrap: wrap;
+      flex-direction: column;
+      text-align: center;
+    }
+    table tr{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media only screen and (min-width:780px){
+    header nav ul{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: initial;
+    }
+    table tr{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .title-table{
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width:920px){
+    header nav ul{
+      display: flex;
+      justify-content: space-around;
+      background-color: #797972;
+      overflow: hidden;
+    }
+    table tr{
+      display: table-row;
+    }
+  }
